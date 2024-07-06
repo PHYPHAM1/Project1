@@ -37,11 +37,10 @@ Welcome to the Culinary Craftbook Hub! This web application allows users to expl
 3. Open `index.html` in your preferred web browser.
 
 ## Usage
-1. **Browse Recipes**: Use the links or nav section  on the home page to find recipes.
+1. **Browse Recipes**: Use the links or nav section on the home page to find recipes.
 2. **View Recipe Details**: Click on a recipe from the list to see full details.
 3. **Add/Edit Recipes**: Use the form to add new recipes or edit existing ones.
-4. **Manage Favorites**: Mark recipes as favorites and view them in the Favorites section.
-5. **Persistent Storage**: All data is stored in local storage and will persist across sessions.
+4. **Persistent Storage**: All data is stored in local storage and will persist across sessions.
 
 ## Contributing
 We welcome contributions to enhance the Culinary Craftbook Hub! To contribute, please follow these steps:
@@ -66,8 +65,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 For any questions or suggestions, please contact us at:
 - Email: support@culinarycraftbookhub.com
-- GitHub: [yourusername](https://github.com/yourusername)
-
 ---
 
 Thank you for using the Culinary Craftbook Hub! Happy cooking!
