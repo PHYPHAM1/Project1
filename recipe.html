@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
+    <!-- we can use javescript to alter the title to match the name of the recipe we selected -->
+     <link rel="stylesheet" href="./assets/css/recipe.css"/>
 </head>
 <body>
-    
+    <!-- use js to insert textContent of stored recipe name into header -->
+    <header><h1 id="name-recipe"></h1></header>
+    <main>
+        <section>
+            <h2>Cook Time:</h2>
+            <!-- use js to insert stored cook time into the p element -->
+            <p id="cook-time-recipe"></p>
+        </section>
+        <section>
+            <h2>Ingredients:</h2>
+            <!-- use js to insert stored ingredient list into p element -->
+            <p id="ingredients-recipe"></p>
+        </section>
+        <section>
+            <h2>Instructions:</h2>
+            <!-- use js to insert stored instructions into p element -->
+            <p id="instructions-recipe"></p>
+        </section>
+    </main>
+
+    <!-- two javascript files, one that will contain functions for both pages, one for just this page -->
+    <script src="./assets/js/shared.js"></script>
+    <script src="./assets/js/recipe.js"></script>
 </body>
 </html>
