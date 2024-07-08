@@ -1,7 +1,7 @@
 const recipeName = document.querySelector(`#name-recipe`)
-const cookTime = document.querySelector(`cook-time-recipe`)
-const ingredients = document.querySelector(`ingredients-recipe`)
-const instructions = document.querySelector(`instructions-recipe`)
+const cookTime = document.querySelector(`#cook-time-recipe`)
+const ingredients = document.querySelector(`#ingredients-recipe`)
+const instructions = document.querySelector(`#instructions-recipe`)
 const title = document.querySelector(`title`)
 
 
