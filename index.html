@@ -42,12 +42,12 @@ this is the general structure for our form to place in a modal. We'll use js to 
         
 
         <!-- Button trigger modal -->
-<button id="add-recipe" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button id="add-recipe" data-bs-toggle="modal" data-bs-target="#formModal">
     Add New Recipes
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="AddRecipe" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -76,23 +76,24 @@ this is the general structure for our form to place in a modal. We'll use js to 
                 </div>
                 <div class="mb-3">
                     <label for="cook-time-form" class="form-label">Cooking Time</label>
-                    <input type="text" class="form-control" id="cooking-time-form" aria-describedby="Recipe">
+                    <input type="text" class="form-control" id="cook-time-form" aria-describedby="Recipe">
                   </div>
                   <div class="mb-3">
                     <label for="ingredients-form" class="form-label">Ingredients</label>
-                    <input type="text" class="form-control" id="ingredients-form" aria-describedby="Recipe">
+                    <textarea class="form-control" id="ingredients-form" aria-describedby="Recipe"></textarea>
                   </div>
                   <div class="mb-3">
                     <label for="instructions-form" class="form-label">Instructions</label>
-                    <input type="text" class="form-control" id="instructions-form" aria-describedby="Recipe">
+                    <textarea class="form-control" id="instructions-form" aria-describedby="Recipe"></textarea>
                   </div>
-                
+                  <div id="error">
+                  </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div> -->
         </div>
       </div>
     </div>
