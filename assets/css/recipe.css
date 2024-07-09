@@ -1,0 +1,41 @@
+* {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content:right ;
+    }
+
+nav button {
+    margin: 10px 10%;
+    font-size: 200%;
+    background-color: rgb(57, 95, 95);
+    font-weight: 400;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgb(57, 95, 95) 0 0 3px 3px;
+}
+
+
+h1 {
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+h2 {
+    font-size: 175%;
+}
+
+section {
+    min-height: 20vh;
+    margin: 5px 5%;
+}
+
+#cooktime {
+    min-height:auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
