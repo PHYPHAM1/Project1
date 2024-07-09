@@ -12,7 +12,7 @@
     <!-- use js to insert textContent of stored recipe name into header -->
     <header>
         <nav>
-            <button id=>Home</button>
+            <button id="Home">Home</button>
         </nav>
         <h1 id="name-recipe"></h1>
     </header>
@@ -33,7 +33,51 @@
             <p id="instructions-recipe"></p>
         </section>
     </main>
-
+    <footer>
+        <button id="edit-recipe" data-bs-toggle="modal" data-bs-target="#editModal">
+            Edit This Recipe
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="AddRecipe" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Edit this recipe</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="name-edit" class="form-label">Recipe Name</label>
+                          <input type="text" class="form-control" id="name-edit" aria-describedby="Recipe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cook-time-edit" class="form-label">Cooking Time</label>
+                            <input type="text" class="form-control" id="cook-time-edit" aria-describedby="Recipe">
+                          </div>
+                          <div class="mb-3">
+                            <label for="ingredients-edit" class="form-label">Ingredients</label>
+                            <textarea class="form-control" id="ingredients-edit" aria-describedby="Recipe"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="instructions-edit" class="form-label">Instructions</label>
+                            <textarea class="form-control" id="instructions-edit" aria-describedby="Recipe"></textarea>
+                          </div>
+                          <div id="error">
+                          </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </footer>
     <!-- two javascript files, one that will contain functions for both pages, one for just this page -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./assets/js/shared.js"></script>
