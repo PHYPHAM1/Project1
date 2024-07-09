@@ -1,3 +1,7 @@
+* {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 nav {
     display: flex;
@@ -18,11 +22,20 @@ nav button {
 h1 {
     font-size: 250%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     }
+
+h2 {
+    font-size: 175%;
+}
 
 section {
     min-height: 20vh;
     margin: 5px 5%;
 }
 
+#cooktime {
+    min-height:auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
