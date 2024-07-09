@@ -55,5 +55,7 @@ form.addEventListener('submit',addRecipe);
 
 //clickable recipe
 card.addEventListener('click', function() {
+    localStorage.setItem('recipe-choice', `${card.getAttribute('data-index')}`)
     window.location.href ="./recipe.html";
 });
+
