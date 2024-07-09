@@ -16,7 +16,7 @@ const renderRecipe = function(array) {
 
 
 
-renderRecipe(readLocalStorage())
+renderRecipe(readRecipeList())
 
 
 // to-do addEventListener for back button to redirect to landing page
