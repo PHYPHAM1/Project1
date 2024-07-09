@@ -1,7 +1,7 @@
 
 
 
-form.addEventListener('submit',addRecipe);
+
 const recipeName = document.querySelector(`#name-recipe`)
 const cookTime = document.querySelector(`#cook-time-recipe`)
 const ingredients = document.querySelector(`#ingredients-recipe`)

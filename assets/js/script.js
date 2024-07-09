@@ -38,3 +38,5 @@ function readLocalStorage () {
     let recipeCollection = JSON.parse(localStorage.getItem('recipeCollection')) || [];
     return recipeCollection;
 }
+
+form.addEventListener('submit',addRecipe);
