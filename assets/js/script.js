@@ -2,6 +2,10 @@ const nameInput = document.querySelector('#name-form')
 const cookInput = document.querySelector('#cook-time-form')
 const ingredientInput = document.querySelector('#ingredients-form')
 const instructionInput = document.querySelector('#instructions-form')
+
+//clickable recipe list variable
+const card = document.querySelector('#container');
+
 const error = document.querySelector('#error')
 const form = document.querySelector('form')
 
@@ -47,3 +51,9 @@ function recipeStorage(recipeList) {
 // shouldn't be necessary, read function is in shared.js
 
 form.addEventListener('submit',addRecipe);
+
+
+//clickable recipe
+card.addEventListener('click', function() {
+    window.location.href ="./recipe.html";
+});
