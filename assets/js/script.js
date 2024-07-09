@@ -2,7 +2,6 @@ const nameInput = document.querySelector('#name-form')
 const cookInput = document.querySelector('#cook-time-form')
 const ingredientInput = document.querySelector('#ingredients-form')
 const instructionInput = document.querySelector('#instructions-form')
-<<<<<<< HEAD
 
 //clickable recipe list variable
 const card = document.querySelector('#container');
@@ -11,10 +10,8 @@ const card = document.querySelector('#container');
 function displayMessage(type, message) {
     error.textContent = message;
   }
-=======
 const error = document.querySelector('#error')
 const form = document.querySelector('form')
->>>>>>> 993a41209fee5bca1af8888fad349d0d343d8aa2
 
 function addRecipe(event) {
     event.preventDefault();
