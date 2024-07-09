@@ -1,0 +1,46 @@
+* {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-size: 250%;
+    font-weight: 300;
+    text-align: center;
+    margin: 30px;
+    min-height: 10vh;
+}
+
+main {
+    min-height: 70vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 60vh;
+}
+
+#add-recipe {
+    min-height: 10vh;
+    max-width: 30vh;
+    border-radius: 10px;
+    background-color: rgb(57, 95, 95);
+    box-shadow: rgb(57, 95, 95) 0 0 3px 3px;
+    color:white;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 300;
+    margin-top: 5vh;
+}

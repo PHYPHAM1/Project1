@@ -10,12 +10,18 @@ const title = document.querySelector(`title`)
 
 
 const renderRecipe = function(array) {
+    if (localStorage.getItem(`recipe-choice`)) {
     const index = localStorage.getItem(`recipe-choice`)
     title.textContent = `${array[index].name}`
     recipeName.textContent = `${array[index].name}`
     cookTime.textContent = `${array[index].cooktime}`
     ingredients.textContent = `${array[index].ingredients}`
     instructions.textContent = `${array[index].instructions}`
+    }
+    else {
+    recipeName.textContent = `Recipe not found`
+    }
+
 }
 
 
