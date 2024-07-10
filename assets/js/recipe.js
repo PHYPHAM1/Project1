@@ -8,6 +8,7 @@ const instructions = document.querySelector(`#instructions-recipe`)
 const title = document.querySelector(`title`)
 
 
+//render recipe details into page
 const renderRecipe = function(array) {
     if (localStorage.getItem(`recipe-choice`)) {
     const index = localStorage.getItem(`recipe-choice`)
@@ -23,6 +24,7 @@ const renderRecipe = function(array) {
 
 }
 
+//back button
 btnBack.addEventListener('click', () => {
     window.location.assign("index.html");
 });
