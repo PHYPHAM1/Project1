@@ -24,10 +24,10 @@ const index = localStorage.getItem(`recipe-choice`)
 const renderRecipe = function(array) {
     if (localStorage.getItem(`recipe-choice`)) {
     title.textContent = `${array[index].name}`;
-    recipeName.textContent = `${array[index].name}`;
-    cookTime.textContent = `${array[index].cooktime}`;
-    ingredients.textContent = `${array[index].ingredients}`;
-    instructions.textContent = `${array[index].instructions}`;
+    recipeName.innerText = `${array[index].name}`;
+    cookTime.innerText = `${array[index].cooktime}`;
+    ingredients.innerText = `${array[index].ingredients}`;
+    instructions.innerText = `${array[index].instructions}`;
     }
     else {
     recipeName.textContent = `Recipe not found`
