@@ -5,6 +5,10 @@ const instructionInput = document.querySelector('#instructions-form')
 
 const container = document.querySelector('.container')
 
+
+function displayMessage(type, message) {
+    error.textContent = message;
+  }
 const error = document.querySelector('#error')
 const form = document.querySelector('form')
 

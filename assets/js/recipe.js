@@ -1,6 +1,5 @@
 
-
-
+let btnBack = document.querySelector('#home');
 
 const recipeName = document.querySelector(`#name-recipe`)
 const cookTime = document.querySelector(`#cook-time-recipe`)
@@ -24,7 +23,9 @@ const renderRecipe = function(array) {
 
 }
 
-
+btnBack.addEventListener('click', () => {
+    window.location.assign("index.html");
+});
 
 renderRecipe(readRecipeList())
 
