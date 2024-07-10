@@ -1,6 +1,5 @@
 
-
-
+let btnBack = document.querySelector('#home');
 
 const recipeName = document.querySelector(`#name-recipe`)
 const cookTime = document.querySelector(`#cook-time-recipe`)
@@ -16,6 +15,7 @@ const instructionsEdit = document.querySelector('instructions-edit')
 
 const index = localStorage.getItem(`recipe-choice`)
 
+//render recipe details into page
 const renderRecipe = function(array) {
     if (localStorage.getItem(`recipe-choice`)) {
     title.textContent = `${array[index].name}`;
@@ -30,7 +30,10 @@ const renderRecipe = function(array) {
 
 }
 
-
+//back button
+btnBack.addEventListener('click', () => {
+    window.location.assign("index.html");
+});
 
 renderRecipe(readRecipeList())
 

@@ -3,40 +3,64 @@ const cookInput = document.querySelector('#cook-time-form')
 const ingredientInput = document.querySelector('#ingredients-form')
 const instructionInput = document.querySelector('#instructions-form')
 
-function displayMessage(type, message) {
-    error.textContent = message;
-  }
+const container = document.querySelector('.container')
 
+const error = document.querySelector('#error')
+const form = document.querySelector('form')
+
+
+// take info from our recipe submission to create an object
 function addRecipe(event) {
     event.preventDefault();
 
     const recipeList = {
+        name: nameInput.value.trim(),
         cooktime: cookInput.value.trim(),
         ingredients: ingredientInput.value.trim(),
         instructions: instructionInput.value.trim()
     };
-    if (recipeList.cooktime === '' || recipeList.ingredients === '' || recipeList.instructions === '') {
-        displayMessage('error', "Please complete the form.");
+    if (recipeList.name === '' || recipeList.cooktime === '' || recipeList.ingredients === '' || recipeList.instructions === '') {
+        error.textContent = 'Please complete the form.';
       } else {
-        displayMessage('success', 'Submitted Recipe Successfully');
         recipeStorage(recipeList)
-        
-        let redirectURL = "./recipe.html";
-        redirectPage (redirectURL);
+        nameInput.value = ''
+        cookInput.value = ''
+        ingredientInput.value = ''
+        instructionInput.value = ''
+        error.textContent = 'Submitted Recipe Successfully';
+        setTimeout(function(){location.assign('./index.html')}, 500)
       }
 }
-
+// take our submitted recipe object and push it into local storage
 function recipeStorage(recipeList) {
-    localStorage.setItem('recipe', JSON.stringify(recipeList));
+    const storedArray = readRecipeList()
+    storedArray.push(recipeList)
+    localStorage.setItem('recipe', JSON.stringify(storedArray));
+}
+// function to render recipe list
+function renderList() {
+    const storedArray = readRecipeList()
+    for (i = 0; i < storedArray.length; i++) {
+        const art = document.createElement('article')
+        art.textContent = `${storedArray[i].name}`
+        art.classList.add('col-4');
+        container.appendChild(art)
+        art.setAttribute('data-index', `${i}`)
+    }
 }
 
-function redirectPage (url) {
-    window.location.href = url;
-}
+renderList()
 
-function readLocalStorage () {
-    let recipeCollection = JSON.parse(localStorage.getItem('recipeCollection')) || [];
-    return recipeCollection;
-}
-
+// event listener for modal submit
 form.addEventListener('submit',addRecipe);
+
+
+//clickable recipe
+
+container.addEventListener('click', function(event) {
+    const element = event.target
+if (element.matches('article')) {
+    localStorage.setItem('recipe-choice', `${element.getAttribute('data-index')}`)
+    window.location.href ="./recipe.html";
+}});
+
