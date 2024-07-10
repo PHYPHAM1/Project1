@@ -53,10 +53,8 @@ function renderList() {
     const storedArray = readRecipeList()
     for (i = 0; i < storedArray.length; i++) {
         const art = document.createElement('article')
-        const artName = document.createElement('h3')
-        artName.textContent = `${storedArray[i].name}`
+        art.textContent = `${storedArray[i].name}`
         container.appendChild(art)
-        art.appendChild(artName)
         art.setAttribute('data-index', `${i}`)
     }
 }
@@ -67,10 +65,12 @@ form.addEventListener('submit',addRecipe);
 
 
 //clickable recipe
-const card = document.querySelectorAll('article')
+// const card = document.querySelectorAll('article')
 
-card.addEventListener('click', function() {
-    localStorage.setItem('recipe-choice', `${card.getAttribute('data-index')}`)
+container.addEventListener('click', function(event) {
+    const element = event.target
+if (element.matches('article')) {
+    localStorage.setItem('recipe-choice', `${element.getAttribute('data-index')}`)
     window.location.href ="./recipe.html";
-});
+}});
 
