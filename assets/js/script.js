@@ -58,6 +58,7 @@ function renderList() {
     for (i = 0; i < storedArray.length; i++) {
         const art = document.createElement('article')
         art.textContent = `${storedArray[i].name}`
+        art.classList.add('col-4');
         container.appendChild(art)
         art.setAttribute('data-index', `${i}`)
     }
