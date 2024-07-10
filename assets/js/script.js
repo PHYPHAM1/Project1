@@ -3,8 +3,7 @@ const cookInput = document.querySelector('#cook-time-form')
 const ingredientInput = document.querySelector('#ingredients-form')
 const instructionInput = document.querySelector('#instructions-form')
 
-//clickable recipe list variable
-const card = document.querySelector('#container');
+const container = document.querySelector('.container')
 
 const error = document.querySelector('#error')
 const form = document.querySelector('form')
@@ -50,10 +49,28 @@ function recipeStorage(recipeList) {
 // }
 // shouldn't be necessary, read function is in shared.js
 
+function renderList() {
+    const storedArray = readRecipeList()
+    for (i = 0; i < storedArray.length; i++) {
+        const art = document.createElement('article')
+        art.textContent = `${storedArray[i].name}`
+        container.appendChild(art)
+        art.setAttribute('data-index', `${i}`)
+    }
+}
+
+renderList()
+
 form.addEventListener('submit',addRecipe);
 
 
 //clickable recipe
-card.addEventListener('click', function() {
+// const card = document.querySelectorAll('article')
+
+container.addEventListener('click', function(event) {
+    const element = event.target
+if (element.matches('article')) {
+    localStorage.setItem('recipe-choice', `${element.getAttribute('data-index')}`)
     window.location.href ="./recipe.html";
-});
+}});
+
