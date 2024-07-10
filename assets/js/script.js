@@ -64,8 +64,25 @@ function renderList() {
     }
 }
 
+function adjustColumnClass() {
+    const recipeColumn = document.querySelectorAll('article');
+    recipeColumn.forEach(article => {
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            article.classList.remove('col-4');
+            article.classList.add('col-5');
+        } else {
+            article.classList.remove('col-5');
+            article.classList.add('col-4');
+        }
+    });
+}
+
+
+
+adjustColumnClass()
 renderList()
 
+window.addEventListener('resize', adjustColumnClass);
 form.addEventListener('submit',addRecipe);
 
 
