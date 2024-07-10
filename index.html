@@ -10,17 +10,11 @@
 <body>
     <header><h1>Recipe Vault</h1></header>
     <main>
-        <div id="container">
+        <div class="container">
             <!-- this needs to be a flex container, and it will contain article elements of our recipes once they're added -->
             <!-- if we have no recipes in localstorage, we'll use javascript to insert textContent here saying something like 'You haven't saved any recipes yet. How about adding a new one?' -->
-        </div>
-        <!-- <button id="add-recipe" type="button">Add a new recipe</button> -->
-        <!-- this button will have a click eventlistener, which will bring up a bootstrap modal containing our form for adding a new recipe -->
-      
-<!--      
-this is the general structure for our form to place in a modal. We'll use js to insert textContent into the #error div if we submit the form with any fields empty  -->
-        
-        
+          
+          </div>
 
         <!-- Button trigger modal -->
 <button id="add-recipe" data-bs-toggle="modal" data-bs-target="#formModal">
@@ -36,20 +30,6 @@ this is the general structure for our form to place in a modal. We'll use js to 
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <!-- <form>
-                <h3>Add a new recipe</h3>
-                <label for="name-form">Recipe name</label>
-                <input id="name-form" name="name"/>
-                <label for="cook-time-form">Cooking time</label>
-                <input id="cook-time-form" name="cook time"/>
-                <label for="ingredients-form">Ingredients</label>
-                <textarea id="ingredients-form" name="ingredients"></textarea>
-                <label for="instructions-form">Instructions</label>
-                <textarea id="instructions-form" name="instructions"></textarea>
-                <input id="submit-form" type="submit">
-                <div id="error">
-                </div>
-            </form>  -->
             <form>
                 <div class="mb-3">
                   <label for="name-form" class="form-label">Recipe Name</label>
