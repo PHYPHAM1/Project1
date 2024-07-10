@@ -23,12 +23,7 @@ function addRecipe(event) {
         error.textContent = 'Please complete the form.';
       } else {
         recipeStorage(recipeList)
-        nameInput.value = ''
-        cookInput.value = ''
-        ingredientInput.value = ''
-        instructionInput.value = ''
-        error.textContent = 'Submitted Recipe Successfully';
-        setTimeout(function(){location.assign('./index.html')}, 500)
+        location.assign('./index.html')
       }
 }
 // take our submitted recipe object and push it into local storage

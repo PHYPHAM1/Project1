@@ -14,6 +14,9 @@ const ingredientsEdit = document.querySelector('#ingredients-edit')
 const instructionsEdit = document.querySelector('#instructions-edit')
 const form = document.querySelector('form')
 
+const deleteConfirm = document.querySelector('#confirm-delete')
+const message = document.querySelector('#message')
+
 const index = localStorage.getItem(`recipe-choice`)
 
 
@@ -41,7 +44,7 @@ renderRecipe(readRecipeList())
 
 
 
-//add listener for edit form
+//add listener for edit button
 
 edit.addEventListener('click', function() {
     const object = readRecipeList()[index]
@@ -68,15 +71,24 @@ function editRecipe(event) {
       } else {
         array.splice(index, 1, recipeList)
         localStorage.setItem('recipe', JSON.stringify(array))
-        nameEdit.value = ''
-        cookTimeEdit.value = ''
-        ingredientsEdit.value = ''
-        instructionsEdit.value = ''
-        error.textContent = 'Recipe Saved';
-        setTimeout(function(){location.assign('./recipe.html')}, 500)
+        location.assign('./recipe.html')
       }
 }
 
 form.addEventListener('submit', editRecipe)
 
+// add delete recipe function
 
+function deleteRecipe() {
+    const array = readRecipeList()
+    array.splice(index, 1)
+    localStorage.setItem('recipe', JSON.stringify(array))
+    localStorage.setItem('recipe-choice', '')
+    location.assign('./index.html')
+}
+
+
+
+// add event listener modal delete confirm button
+
+deleteConfirm.addEventListener('click', deleteRecipe)
