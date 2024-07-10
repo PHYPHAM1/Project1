@@ -62,17 +62,22 @@ function renderList() {
         container.appendChild(art)
         art.setAttribute('data-index', `${i}`)
     }
+    adjustColumnClass();
+    // will run adjustment automatically on page load
 }
 
 function adjustColumnClass() {
-    const recipeColumn = document.querySelectorAll('article');
-    recipeColumn.forEach(article => {
-        if (window.matchMedia("(max-width: 768px)").matches) {
-            article.classList.remove('col-4');
-            article.classList.add('col-5');
-        } else {
-            article.classList.remove('col-5');
+    const recipeColumns = document.querySelectorAll('article');
+    recipeColumns.forEach(article => {
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            article.classList.remove('col-6', 'col-12');
             article.classList.add('col-4');
+        } else if (window.matchMedia("(min-width: 576px)").matches) {
+            article.classList.remove('col-4', 'col-12');
+            article.classList.add('col-6');
+        } else {
+            article.classList.remove('col-4', 'col-6');
+            article.classList.add('col-12');
         }
     });
 }
