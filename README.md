@@ -1,5 +1,5 @@
 
-# Culinary Craftbook Hub
+# Recipe Vault
 
 Welcome to the Culinary Craftbook Hub! This web application allows users to explore, add, and manage their favorite recipes in an intuitive and user-friendly interface. 
 
@@ -28,11 +28,11 @@ Welcome to the Culinary Craftbook Hub! This web application allows users to expl
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/culinary-craftbook-hub.git
+   git clone https://github.com/yourusername/Recipe-Vault.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd culinary-craftbook-hub
+   cd Recipe-Vault-hub
    ```
 3. Open `index.html` in your preferred web browser.
 
@@ -64,7 +64,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For any questions or suggestions, please contact us at:
-- Email: support@culinarycraftbookhub.com
+- Email: support@recipevault.com
 ---
 
 Thank you for using the Culinary Craftbook Hub! Happy cooking!

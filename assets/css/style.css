@@ -44,3 +44,14 @@ footer {
     font-weight: 300;
     margin-top: 5vh;
 }
+
+.container {
+    display: flex;
+}
+
+article {
+border: 2px solid;
+border-radius: 4px;
+padding: 0.5rem;
+
+}

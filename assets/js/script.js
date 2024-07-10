@@ -5,6 +5,10 @@ const instructionInput = document.querySelector('#instructions-form')
 
 const container = document.querySelector('.container')
 
+
+function displayMessage(type, message) {
+    error.textContent = message;
+  }
 const error = document.querySelector('#error')
 const form = document.querySelector('form')
 
@@ -54,6 +58,7 @@ function renderList() {
     for (i = 0; i < storedArray.length; i++) {
         const art = document.createElement('article')
         art.textContent = `${storedArray[i].name}`
+        art.classList.add('col-4');
         container.appendChild(art)
         art.setAttribute('data-index', `${i}`)
     }
