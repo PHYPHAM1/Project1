@@ -49,7 +49,8 @@ footer {
 }
 
 article {
-border: 2px solid #261E17;
+border: 12px solid #261E17;
+border-radius: 6% 6% 0px 0px;
 padding: 0.5rem;
 display: flex;
 justify-content: center;
@@ -57,7 +58,6 @@ align-items: center;
 font-size: 1.5rem;
 /* background-color:; TBD */
 /* color:white; */
-border-radius: 6%;
 }
 
 #img-div {
