@@ -39,3 +39,7 @@ section {
     text-align: center;
     margin-bottom: 50px;
 }
+
+.col {border-style: solid;border-color: rgb(0, 255, 149);}
+.col {padding: 20px}
+#name-recipe {border-style: solid;border-color: darkgreen;}
