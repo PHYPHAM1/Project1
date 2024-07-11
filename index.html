@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
-    <header><h1>Recipe Vault</h1></header>
+    <header>
+        <div id="img-div">
+            <img id ="headimg" src="./assets/image/foodimage.jpg" alt="foodimage">
+        </div>
+        <h1>Recipe Vault</h1>
+    </header>
     <main>
         <div class="container">
             <!-- this needs to be a flex container, and it will contain article elements of our recipes once they're added -->
             <!-- if we have no recipes in localstorage, we'll use javascript to insert textContent here saying something like 'You haven't saved any recipes yet. How about adding a new one?' -->
           
           </div>
+        <!-- Button trigger modal -->
 <button id="add-recipe" data-bs-toggle="modal" data-bs-target="#formModal">
     Add New Recipes
   </button>
