@@ -39,3 +39,27 @@ section {
     text-align: center;
     margin-bottom: 50px;
 }
+
+footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#edit-recipe, #delete-recipe {
+    margin: 10px 10%;
+    font-size: 200%;
+    font-weight: 400;
+    color: white;
+    border-radius: 10px;
+}
+
+#edit-recipe {
+    background-color: rgb(57, 95, 95);
+    box-shadow: rgb(57, 95, 95) 0 0 3px 3px;
+}
+
+#delete-recipe {
+    background-color: rgb(143, 44, 40);
+    box-shadow: rgb(143, 44, 40) 0 0 3px 3px;
+}
