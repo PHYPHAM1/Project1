@@ -38,10 +38,11 @@ function renderList() {
     for (i = 0; i < storedArray.length; i++) {
         const art = document.createElement('article')
         art.textContent = `${storedArray[i].name}`
-        art.classList.add('col-lg-4');
-        art.classList.add('col-md-6')
+        art.classList.add('col-lg-3')
+        art.classList.add('col-md-5')
         art.classList.add('col-sm-12')
         art.classList.add('col-12')
+        art.classList.add('m-1')
         container.appendChild(art)
         art.setAttribute('data-index', `${i}`)
     }
