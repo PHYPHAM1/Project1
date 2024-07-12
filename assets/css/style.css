@@ -1,6 +1,7 @@
 * {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all .25s;
 }
 
 header {
@@ -51,12 +52,17 @@ main {
     margin-top: 5px;
 }
 
+#add-recipe:hover {
+    box-shadow: rgb(57, 95, 95) 0 0 30px 3px;
+
+}
 
 footer {
     text-align: center;
     font-size: 150%;
     font-weight: 300;
     margin-top: 5vh;
+    color:#595045
 }
 
 article {
@@ -66,9 +72,16 @@ padding: 0.5rem;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1.5rem;
+font-size: 2.5rem;
+font-weight: 300;
 /* background-color:; TBD */
 color:#595045;
+max-height: 300px;
+min-height: 100px;
+}
+
+article:hover {
+    box-shadow: #A69C94 inset 0 0 30px 3px;
 }
 
 #img-div {

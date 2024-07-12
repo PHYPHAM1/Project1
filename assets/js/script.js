@@ -37,7 +37,7 @@ function renderList() {
     const storedArray = readRecipeList()
     for (i = 0; i < storedArray.length; i++) {
         const art = document.createElement('article')
-        art.textContent = `${storedArray[i].name}`
+        art.textContent = `${storedArray[i].name.toUpperCase()}`
         art.classList.add('col-lg-3')
         art.classList.add('col-md-5')
         art.classList.add('col-sm-12')
