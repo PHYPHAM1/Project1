@@ -14,13 +14,14 @@ header {
     min-height: 20vh;
     display: flex;
     flex-direction: column;
-    background-image: url('../image/foodimage.jpg')
+    background-image: url('../image/RECIPE\ VAULT.png');
 }
 
 header h1 {
     font-size: 300%;
     color:rgb(255, 255, 255);
     font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main {
@@ -42,7 +43,7 @@ main {
     min-height: 10vh;
     max-width: 30vh;
     border-radius: 10px;
-    background-color: rgb(57, 95, 95);
+    background-color:#403831;
     box-shadow: rgb(57, 95, 95) 0 0 3px 3px;
     color:white;
     font-weight: 400;
@@ -59,7 +60,7 @@ footer {
 }
 
 article {
-border: 12px solid #261E17;
+border: 8px solid #A69C94;
 border-radius: 6% 6% 0px 0px;
 padding: 0.5rem;
 display: flex;
@@ -67,7 +68,7 @@ justify-content: center;
 align-items: center;
 font-size: 1.5rem;
 /* background-color:; TBD */
-/* color:white; */
+color:#595045;
 }
 
 #img-div {
@@ -84,5 +85,5 @@ border-radius: 2%;
 }
 
 body {
-    /* background-color:TBD ; */
+    background-color:#F2E5D5 ;
 }
