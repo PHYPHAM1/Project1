@@ -24,7 +24,7 @@ const index = localStorage.getItem(`recipe-choice`)
 const renderRecipe = function(array) {
     if (localStorage.getItem(`recipe-choice`)) {
     title.textContent = `${array[index].name}`;
-    recipeName.innerText = `${array[index].name}`;
+    recipeName.innerText = `${array[index].name.toUpperCase()}`;
     cookTime.innerText = `${array[index].cooktime}`;
     ingredients.innerText = `${array[index].ingredients}`;
     instructions.innerText = `${array[index].instructions}`;
