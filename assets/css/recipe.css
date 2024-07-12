@@ -40,6 +40,26 @@ section {
     margin-bottom: 50px;
 }
 
-.col {border-style: solid;border-color: rgb(0, 255, 149);}
-.col {padding: 20px}
-#name-recipe {border-style: solid;border-color: darkgreen;}
+footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#edit-recipe, #delete-recipe {
+    margin: 10px 10%;
+    font-size: 200%;
+    font-weight: 400;
+    color: white;
+    border-radius: 10px;
+}
+
+#edit-recipe {
+    background-color: rgb(57, 95, 95);
+    box-shadow: rgb(57, 95, 95) 0 0 3px 3px;
+}
+
+#delete-recipe {
+    background-color: rgb(143, 44, 40);
+    box-shadow: rgb(143, 44, 40) 0 0 3px 3px;
+}
