@@ -1,11 +1,14 @@
 * {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all .25s;
 }
 
 header{
 
     background-image: url('../image/RECIPE\ VAULT.png');
+    background-size: cover;
+    margin: 20px;
 }
 nav {
     display: flex;
@@ -14,7 +17,7 @@ nav {
 
 nav button {
     margin: 10px 10%;
-    font-size: 200%;
+    font-size: 150%;
     background-color:#403831;
     font-weight: 400;
     color: white;
@@ -23,11 +26,12 @@ nav button {
 }
 
 
-h1 {
-    font-size: 250%;
-    text-align: center;
-    margin-bottom: 10px;
+header h1 {
+    font-size: 300%;
     color:rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
     }
 
 h2 {
@@ -55,7 +59,7 @@ footer {
 
 #edit-recipe, #delete-recipe {
     margin: 10px 10%;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 400;
     color: white;
     border-radius: 10px;
@@ -69,6 +73,14 @@ footer {
 #delete-recipe {
     background-color: rgb(143, 44, 40);
     box-shadow: rgb(143, 44, 40) 0 0 3px 3px;
+}
+
+#edit-recipe:hover, nav button:hover {
+    box-shadow: rgb(57, 95, 95) 0 0 30px 3px
+}
+
+#delete-recipe:hover {
+    box-shadow: rgb(143, 44, 40) 0 0 30px 3px
 }
 
 body {

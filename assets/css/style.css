@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     background-image: url('../image/RECIPE\ VAULT.png');
+    background-size: cover;
 }
 
 header h1 {
