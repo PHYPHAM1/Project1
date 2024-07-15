@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     background-image: url('../image/RECIPE\ VAULT.png');
+    background-size: cover;
 }
 
 header h1 {
@@ -78,6 +79,7 @@ font-weight: 300;
 color:#595045;
 max-height: 300px;
 min-height: 100px;
+text-align: center;
 }
 
 article:hover {
