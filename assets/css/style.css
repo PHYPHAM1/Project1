@@ -79,6 +79,7 @@ font-weight: 300;
 color:#595045;
 max-height: 300px;
 min-height: 100px;
+text-align: center;
 }
 
 article:hover {
